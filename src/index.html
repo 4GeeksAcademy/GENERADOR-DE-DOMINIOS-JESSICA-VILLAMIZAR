@@ -1,35 +1,44 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <body style="background-color: bisque;"></body>
-      <h1 class="mt-5">Generador de Dominios</h1>
-      <img src="https://static.wixstatic.com/media/a261d7_4c3ba1e9ae1643a58e35c14d50b3bb55~mv2.jpg/v1/fill/w_920,h_100,al_c,q_85,enc_avif,quality_auto/blog.jpg" />
-     
-      <br></br>
-      <button type="button" class="btn btn-primary"> Generador !!! </button>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
 
-      <div class="fixed-bottom p-4">
-        Jessica Villamizar 
-      </div>
-    </div>
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+<body>
+  <!-- Write your HTML code here, you can delete everything withing the body tags -->
+  <div class="container-fluid text-center">
+
+    <body style="background-color: bisque;"></body>
+    <h1 class="mt-5">Generador de Dominios</h1>
+    <img
+      src="https://static.wixstatic.com/media/a261d7_4c3ba1e9ae1643a58e35c14d50b3bb55~mv2.jpg/v1/fill/w_920,h_100,al_c,q_85,enc_avif,quality_auto/blog.jpg" />
+
+    <br></br>
+
+    <button id="btnGenerar">Generar dominios</button>
+
+    <script>
+      const boton = document.getElementById("btnGenerar");
+
+      boton.style.backgroundColor = "blue";   // color de fondo
+      boton.style.color = "black";            // color del texto
+      boton.style.border = "none";
+      boton.style.padding = "10px 15px";
+      boton.style.borderRadius = "5px";
+    </script>
+
+  </div>
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
